@@ -59,9 +59,9 @@ pipeline {
                     // when {
 
                     // }
-                    // steps {
+                    steps {
                         
-                    // }
+                    }
                 }
 
                 stage('Integration Tests') {
@@ -74,9 +74,9 @@ pipeline {
                     // when {
 
                     // }
-                    // steps {
+                    steps {
                         
-                    // }
+                    }
                 }
 
                 stage('E2E Tests') {
@@ -89,9 +89,9 @@ pipeline {
                     // when {
 
                     // }
-                    // steps {
+                    steps {
                         
-                    // }
+                    }
                 }
             }
         }
@@ -106,9 +106,9 @@ pipeline {
             // when {
 
             // }
-            // steps {
+            steps {
                 
-            // }
+            }
         }
 
         stage('Publish to Heroku') {
@@ -121,9 +121,9 @@ pipeline {
             // when {
 
             // }
-            // steps {
+            steps {
                 
-            // }
+            }
         }
     }
 
