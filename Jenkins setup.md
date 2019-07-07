@@ -59,3 +59,5 @@
 ### 7. In the *Orphaned Item Strategy* tab check the *Discard old items* option and specify the number of *Days to keep old items* and the *Max # of old items to keep*
 
 ### 7. Hit *Save* to save the pipeline changes
+
+// Test changes
