@@ -53,45 +53,45 @@ pipeline {
                     agent {
                         node { label 'UT' }
                     }
-                    environment {
+                    // environment {
                         
-                    }
-                    when {
+                    // }
+                    // when {
 
-                    }
-                    steps {
+                    // }
+                    // steps {
                         
-                    }
+                    // }
                 }
 
                 stage('Integration Tests') {
                     agent {
                         node { label 'IT' }
                     }
-                    environment {
+                    // environment {
                         
-                    }
-                    when {
+                    // }
+                    // when {
 
-                    }
-                    steps {
+                    // }
+                    // steps {
                         
-                    }
+                    // }
                 }
 
                 stage('E2E Tests') {
                     agent {
                         node { label 'E2ET' }
                     }
-                    environment {
+                    // environment {
                         
-                    }
-                    when {
+                    // }
+                    // when {
 
-                    }
-                    steps {
+                    // }
+                    // steps {
                         
-                    }
+                    // }
                 }
             }
         }
@@ -100,30 +100,30 @@ pipeline {
             agent {
                 node { label 'UT' }
             }
-            environment {
+            // environment {
                 
-            }
-            when {
+            // }
+            // when {
 
-            }
-            steps {
+            // }
+            // steps {
                 
-            }
+            // }
         }
 
         stage('Publish to Heroku') {
             agent {
                 node { label 'UT' }
             }
-            environment {
+            // environment {
                 
-            }
-            when {
+            // }
+            // when {
 
-            }
-            steps {
+            // }
+            // steps {
                 
-            }
+            // }
         }
     }
 
