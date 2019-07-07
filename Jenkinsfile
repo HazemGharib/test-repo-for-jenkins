@@ -37,10 +37,6 @@ def constructParameters(branchName) {
 
 pipeline {
     agent none
-    tools {
-        jdk 'jdk8'
-        maven 'M3'
-    }
 
     environment {
         PROJECT_REPO_URL = 'git@github.com:HazemGharib/test-repo-for-jenkins.git'
