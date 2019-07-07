@@ -51,7 +51,7 @@ pipeline {
             parallel {
                 stage('Unit Tests') {
                     agent {
-
+                        node { label 'UT' }
                     }
                     environment {
                         
@@ -66,7 +66,7 @@ pipeline {
 
                 stage('Integration Tests') {
                     agent {
-
+                        node { label 'IT' }
                     }
                     environment {
                         
@@ -81,7 +81,7 @@ pipeline {
 
                 stage('E2E Tests') {
                     agent {
-
+                        node { label 'E2ET' }
                     }
                     environment {
                         
@@ -98,7 +98,7 @@ pipeline {
 
         stage('Build release') {
             agent {
-
+                node { label 'UT' }
             }
             environment {
                 
@@ -113,7 +113,7 @@ pipeline {
 
         stage('Publish to Heroku') {
             agent {
-
+                node { label 'UT' }
             }
             environment {
                 
@@ -129,17 +129,17 @@ pipeline {
 
   post {
     success {
-      node("") {
+      node("UT || IT || E2ET") {
           
       }
     }
     failure {
-      node("") {
+      node("UT || IT || E2ET") {
           
       }
     }
     cleanup {
-      node("") {
+      node("UT || IT || E2ET") {
         cleanWs deleteDirs: true
       }
     }
