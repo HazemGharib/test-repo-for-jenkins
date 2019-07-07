@@ -60,7 +60,7 @@ pipeline {
 
                     // }
                     steps {
-                        
+                        sh 'echo "UT"'
                     }
                 }
 
@@ -75,7 +75,7 @@ pipeline {
 
                     // }
                     steps {
-                        
+                        sh 'echo "IT"'                        
                     }
                 }
 
@@ -90,7 +90,7 @@ pipeline {
 
                     // }
                     steps {
-                        
+                        sh 'echo "E2ET"'                        
                     }
                 }
             }
@@ -107,7 +107,7 @@ pipeline {
 
             // }
             steps {
-                
+                sh 'echo "Build release"' 
             }
         }
 
@@ -122,7 +122,7 @@ pipeline {
 
             // }
             steps {
-                
+                sh 'echo "Publish to Heroku"' 
             }
         }
     }
